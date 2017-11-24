@@ -5,5 +5,7 @@ Simple RESTful API using Golang and Postgres
 
 ##### to run the serve locally
 $ export APP_DB_NAME=db_name APP_DB_USERNAME=username APP_DB_PASSWORD=password
+
 $ go install
+
 $ $GOPATH/bin/mux-postgres-rest # API server runs on port 8000
