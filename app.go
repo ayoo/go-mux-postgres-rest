@@ -32,6 +32,8 @@ func (a *App) Initialize(user, password, dbname string) {
 
 //Run method
 func (a *App) Run(addr string) {
+	// ListenAndServer needs a port string and Handler which requires ServeHTTP(ResponseWriter, *Request) method
+	// The mux.Router implements ServeHTTP(response, *request)
 	log.Fatal(http.ListenAndServe(":8000", a.Router))
 }
 
